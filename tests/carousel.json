@@ -1,0 +1,136 @@
+{
+  "description": "Carousel navigation and functions",
+  "title": "Carousel",
+  "tests": [
+    {
+      "title": "Forward Navigation without Weekends",
+      "id": "963eb9d2-d252-a6e4-772a-3fdd637629a9",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": []
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Start-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190505,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-End-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190505,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "tfv-checkbox-uncheck-checkbox",
+          "parameters": [
+            {
+              "key": "checkboxCssSelector",
+              "value": "-Carousel-Include-MH-Checkbox",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Carousel-Next-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Sunday-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Saturday-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Monday-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "events-grid-First-Grid-Event-Date",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "elementText",
+              "value": "13 May '19",
+              "lookupType": "text"
+            }
+          ]
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "-Carousel-Header",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "elementText",
+              "value": "12 MAY '19 — 18 MAY '19",
+              "lookupType": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

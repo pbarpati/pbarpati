@@ -1,0 +1,11 @@
+import {registerInteractions as registerInteractionsBasic} from '@fds/suit-basic-interactions';
+import * as path from 'path';
+import {writeSteps, registerPageObjects, generateInteractionsJson} from '@fds/suit-interactions-base';
+import {registerInteractions as suitthiefvue} from '@fds/suit-thief-vue';
+import {registerInteractions} from './register';
+registerInteractions();
+registerInteractionsBasic();
+suitthiefvue();
+generateInteractionsJson();
+writeSteps();
+registerPageObjects(path.resolve('./page-objects/'));

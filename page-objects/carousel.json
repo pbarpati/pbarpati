@@ -1,0 +1,48 @@
+{
+  "display": "Carousel",
+  "version": 1,
+  "pageObjects": [
+    {
+      "id": "-Sunday-Button",
+      "display": "Sunday Button",
+      "selector": "[data-qa-class=\"sunday-button\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Monday-Button",
+      "display": "Monday Button",
+      "selector": "[data-qa-class=\"monday-button\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Carousel-Next-Button",
+      "display": "Carousel Next Button",
+      "selector": "[data-qa-id=\"carousel-next-button\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Carousel-Prev-Button",
+      "display": "Carousel Prev Button",
+      "selector": "[data-qa-id=\"carousel-prev-button\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Carousel-Header",
+      "display": "Carousel Header",
+      "selector": "[data-qa-id=\"carousel-header\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Carousel-Include-MH-Checkbox",
+      "display": "Carousel Include MH Checkbox",
+      "selector": "[data-qa-id=\"carousel-include-mh-checkbox\"]",
+      "type": "tfvCheckbox"
+    },
+    {
+      "id": "-Saturday-Button",
+      "display": "Saturday Button",
+      "selector": "[data-qa-class=\"saturday-button\"]",
+      "type": "tfvButtonCssSelector"
+    }
+  ]
+}

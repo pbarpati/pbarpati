@@ -1,0 +1,180 @@
+{
+  "description": "",
+  "title": "Carousel selections",
+  "tests": [
+    {
+      "title": "Carousel Date Selection",
+      "id": "285a703b-9d8e-351c-9dab-fbbd4c739060",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": []
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Start-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190707,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-End-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190713,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[data-qa-id=\"fetch-events-button\"]",
+              "lookupType": "text"
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[data-qa-class=\"thursday-button\"]",
+              "lookupType": "text"
+            }
+          ]
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "events-grid-First-Grid-Event-Date",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "elementText",
+              "value": "11 Jul '19",
+              "lookupType": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Important Events Infobox",
+      "id": "f85084a8-9bfd-d16f-a5f4-6ad4a004854b",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": []
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Today-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[data-qa-class=\"thursday-card\"] [data-qa-class=\"important-events-link\"]",
+              "lookupType": "text"
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[data-qa-id=\"close-infobox-button\"]",
+              "lookupType": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Collapse Carousel",
+      "id": "47932a6b-8335-0f4d-cced-7ad626746f4d",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": []
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Carousel-Header",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Monday-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Carousel-Header",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Monday-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

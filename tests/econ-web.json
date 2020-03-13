@@ -1,0 +1,93 @@
+{
+  "description": "",
+  "title": "Econ web",
+  "tests": [
+    {
+      "title": "Econ-Web",
+      "id": "ba9cc742-ae73-5945-6492-2d7295c0a40d",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Start-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20191128,
+              "lookupType": "number"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-End-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20191128,
+              "lookupType": "number"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Fetch-Events-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "events-grid-First-Grid-Event-Date",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "elementText",
+              "value": "28 Nov '19",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Monday-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ],
+          "excludeStepOnRun": false
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

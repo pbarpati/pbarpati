@@ -1,0 +1,24 @@
+{
+  "display": "General",
+  "version": 1,
+  "pageObjects": [
+    {
+      "id": "-Fetch-Events-Button",
+      "display": "Fetch Events Button",
+      "selector": "[data-qa-id=\"fetch-events-button\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Range-Error-Text",
+      "display": "Range Error Text",
+      "selector": "[data-qa-id=\"range-error\"]",
+      "type": "text"
+    },
+    {
+      "id": "-Format-Error-Text",
+      "display": "Format Error Text",
+      "selector": "[data-qa-id=\"format-error\"]",
+      "type": "text"
+    }
+  ]
+}

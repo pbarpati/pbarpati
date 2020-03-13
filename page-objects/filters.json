@@ -1,0 +1,18 @@
+{
+  "display": "Filters",
+  "version": 1,
+  "pageObjects": [
+    {
+      "id": "filters-Importance-Accordion",
+      "display": "Importance Accordion",
+      "selector": "[data-qa-id=\"importance-accordion\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Importance-Filter---4-Stars",
+      "display": "Importance Filter - 4 Stars",
+      "selector": "[data-qa-id=\"importance4\"]",
+      "type": "tfvButtonCssSelector"
+    }
+  ]
+}

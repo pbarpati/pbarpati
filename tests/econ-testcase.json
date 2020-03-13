@@ -1,0 +1,408 @@
+{
+  "description": "",
+  "title": "ECON TESTCASE",
+  "tests": [
+    {
+      "title": "ECON",
+      "id": "43aad406-e296-051b-a7ed-ce141ff60668",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "tfv-textbox-clear-text",
+          "parameters": [
+            {
+              "key": "textboxSelector",
+              "value": "[data-qa-id=\"start-date-picker\"]",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Start-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20200201,
+              "lookupType": "number"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-End-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20200201,
+              "lookupType": "number"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Fetch-Events-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Date",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Time",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Country",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Event",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Importance",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Period",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Actual",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Consensus",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Surprise",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tg-grid\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Prior",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": true
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[data-qa-id=\"importance-all\"]",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "tfv-infobox-click",
+          "parameters": [
+            {
+              "key": "tfvInfoboxLinkSelector",
+              "value": "[data-qa-id=\"cell-valueTrade Balance NSA\"] [class=\"tfv-infobox-link-text\"]",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "-Carousel-Header",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "elementText",
+              "value": "1 FEB '20 (5 EVENTS)",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[data-qa-id=\"Indicator\"] .tfv-accordion-section-heading",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[id=\"indicator-filter\"]",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "tfv-checkbox-check-checkbox",
+          "parameters": [
+            {
+              "key": "checkboxCssSelector",
+              "value": "[data-qa-id=\"computedFilterValuesBalance of Payments\"]",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "[class=\"tfv-listbox listbox_iQVuHylB_light\"]",
+              "lookupType": "text"
+            },
+            {
+              "key": "elementText",
+              "value": "Balance of Payments",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[class=\"icon_42XJS5l2 remove-on-s_2V0MCeLY tfv-icon-base tfv-icon-remove-on-s\"]",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Monday-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[class=\"carousel-card\"]:nth-child(2) [data-qa-class=\"important-events-link\"]",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "[class=\"icon_42XJS5l2 close-s_5SpBvrbR tfv-icon-base tfv-icon-close-s\"]",
+              "lookupType": "text"
+            }
+          ],
+          "excludeStepOnRun": false
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

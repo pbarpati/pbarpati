@@ -1,0 +1,42 @@
+{
+  "display": "Events Grid",
+  "version": 1,
+  "pageObjects": [
+    {
+      "id": "-Event-Importance---1-Star",
+      "display": "Event Importance - 1 Star",
+      "selector": "[data-qa-class=\"event-importance1\"]",
+      "type": "text"
+    },
+    {
+      "id": "-Event-Importance---2-Stars",
+      "display": "Event Importance - 2 Stars",
+      "selector": "[data-qa-class=\"event-importance2\"]",
+      "type": "text"
+    },
+    {
+      "id": "-Event-Importance---3-Stars",
+      "display": "Event Importance - 3 Stars",
+      "selector": "[data-qa-class=\"event-importance3\"]",
+      "type": "text"
+    },
+    {
+      "id": "-Event-Importance---4-Stars",
+      "display": "Event Importance - 4 Stars",
+      "selector": "[data-qa-class=\"event-importance4\"]",
+      "type": "text"
+    },
+    {
+      "id": "events-grid-First-Grid-Event-Date",
+      "display": "First Grid Event Date",
+      "selector": "[data-qa-id=\"first-grid-event-date\"]",
+      "type": "text"
+    },
+    {
+      "id": "-Last-Grid-Event-Date",
+      "display": "Last Grid Event Date",
+      "selector": "[data-qa-id=\"last-grid-event-date\"]",
+      "type": "text"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "description": "Test toolbar functionality",
+  "title": "Toolbar",
+  "tests": [
+    {
+      "title": "Open and Close Guided Help Functionality",
+      "id": "c4f4573a-55d1-f586-762f-9414d11fb1ec",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": []
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Wrench-Dropdown-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Guided-Help-Menu-Item",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Help-Overlay",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Close-Help-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Help-Overlay",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

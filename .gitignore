@@ -1,0 +1,11 @@
+node_modules
+dist
+yarn-error.log
+interactions.json
+generated-tests
+results
+page-object-metadata.json
+snapshots-temp
+src/interactions.ts
+src/register.ts
+src/register-page-objects.ts

@@ -1,0 +1,8 @@
+{
+  "defaultUrl": "https://economic-calendar.apps.factset.com/?suittesting=1",
+  "useLima": true,
+  "defaultCaccess": [
+    "00CLS"
+  ],
+  "sbu": "Research"
+}

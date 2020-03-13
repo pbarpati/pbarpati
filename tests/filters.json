@@ -1,0 +1,104 @@
+{
+  "description": "Changing filters",
+  "title": "Filters",
+  "tests": [
+    {
+      "title": "Importance Filter Behavior (4 Stars)",
+      "id": "e2cc54ad-d4ac-446a-6319-c1a04c0c85a7",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": []
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Start-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190505,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-End-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190511,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Importance-Filter---4-Stars",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Event-Importance---4-Stars",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Event-Importance---3-Stars",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Event-Importance---2-Stars",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Event-Importance---1-Star",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,24 @@
+{
+  "display": "Date Picker",
+  "version": 1,
+  "pageObjects": [
+    {
+      "id": "-Start-Date-Input",
+      "display": "Start Date Input",
+      "selector": "[data-qa-id=\"start-date-picker\"]",
+      "type": "tfvNumberInput"
+    },
+    {
+      "id": "-End-Date-Input",
+      "display": "End Date Input",
+      "selector": "[data-qa-id=\"end-date-picker\"]",
+      "type": "tfvNumberInput"
+    },
+    {
+      "id": "-Today-Button",
+      "display": "Today Button",
+      "selector": ".tfv-calendar-today-button",
+      "type": "tfvButtonCssSelector"
+    }
+  ]
+}

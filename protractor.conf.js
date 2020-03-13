@@ -1,0 +1,1 @@
+exports.config = require('@fds/suit-test-project-base').getDefaultProtractorConfig(require('./suit-config.json'));

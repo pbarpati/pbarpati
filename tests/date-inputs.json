@@ -1,0 +1,211 @@
+{
+  "description": "Changing date ranges",
+  "title": "Date Inputs",
+  "tests": [
+    {
+      "title": "Start and End Date Picker Functionality",
+      "id": "b8018861-f2a4-3261-252c-eca6a3a989da",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": []
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Start-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190511,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-End-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190505,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Fetch-Events-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Range-Error-Text",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Start-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190505,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "tfv-number-input-set",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-End-Date-Input",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "numberInputValue",
+              "value": 20190511,
+              "lookupType": "number"
+            }
+          ]
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Fetch-Events-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Range-Error-Text",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Format-Error-Text",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "events-grid-First-Grid-Event-Date",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "elementText",
+              "value": "5 May '19",
+              "lookupType": "text"
+            }
+          ]
+        },
+        {
+          "interactionId": "suit-basic-verify-text-contains-match",
+          "parameters": [
+            {
+              "key": "elementCssSelector",
+              "value": "-Carousel-Header",
+              "lookupType": "pageObject",
+              "placeholders": []
+            },
+            {
+              "key": "elementText",
+              "value": "5 MAY '19 — 11 MAY '19",
+              "lookupType": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Today Button Functionality",
+      "id": "38f71127-c329-3406-a4d9-c42655fbe71e",
+      "steps": [
+        {
+          "interactionId": "non-angular-navigate-to-page",
+          "parameters": []
+        },
+        {
+          "interactionId": "thief-vue-button-click",
+          "parameters": [
+            {
+              "key": "buttonCssSelector",
+              "value": "-Today-Button",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Format-Error-Text",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        },
+        {
+          "interactionId": "angular-wait-not-visible",
+          "parameters": [
+            {
+              "key": "cssSelector",
+              "value": "-Range-Error-Text",
+              "lookupType": "pageObject",
+              "placeholders": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

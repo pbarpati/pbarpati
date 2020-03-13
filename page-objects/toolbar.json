@@ -1,0 +1,30 @@
+{
+  "display": "Toolbar",
+  "version": 1,
+  "pageObjects": [
+    {
+      "id": "-Guided-Help-Menu-Item",
+      "display": "Guided Help Menu Item",
+      "selector": "[data-qa-id=\"guided-help-menu-item\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Help-Overlay",
+      "display": "Help Overlay",
+      "selector": "[data-qa-id=\"help-overlay\"]",
+      "type": "General"
+    },
+    {
+      "id": "-Wrench-Dropdown-Button",
+      "display": "Wrench Dropdown Button",
+      "selector": "[data-qa-id=\"wrench-dropdown-button\"]",
+      "type": "tfvButtonCssSelector"
+    },
+    {
+      "id": "-Close-Help-Button",
+      "display": "Close Help Button",
+      "selector": "[data-qa-id=\"close-help-button\"]",
+      "type": "tfvButtonCssSelector"
+    }
+  ]
+}
