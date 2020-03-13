@@ -400,6 +400,11 @@
             }
           ],
           "excludeStepOnRun": false
+        },
+        {
+          "interactionId": "angular-wait-5-seconds",
+          "parameters": [],
+          "excludeStepOnRun": false
         }
       ]
     }
